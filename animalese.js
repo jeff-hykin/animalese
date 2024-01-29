@@ -152,7 +152,7 @@ import letterLibrary from "./animalese.wav.binaryified.js"
  * @param {number} pitch - The pitch value for the animalese audio, ranging from 0 to 2.
  * @returns {RIFFWAVE} - A RIFFWAVE object, use .dataURI to get "data:audio/wav;base64..."
  */
-export function animalese(script, shorten, pitch) {
+export function animalese(script, shorten=false, pitch=1) {
     function shortenWord(str) {
       if (str.length > 1) {
         return str[0] + str[str.length - 1];
@@ -215,7 +215,8 @@ export function animalese(script, shorten, pitch) {
  * @param {number} [options.pitch=1] - The pitch value for the animalese audio, ranging from 0 to 2.
  * @returns {Promise<void>} - A promise representing the playback of the animalese audio.
  */
-export function playSound(text, {shorten=false, pitch=1, }) {
+export function playSound(text, options) {
+    const { shorten, pitch, } = {shorten:false, pitch:1, ...options}
     // pitch should be between 0 and 2
     const audio = new Audio()
     audio.src = animalese(text, shorten, pitch).dataURI

@@ -6,7 +6,7 @@ Ever wanted to generate the talking sound from animal crossing? Well [this guy](
 This library just makes his code work with modern javascript tooling.
  
 ```js
-import { animalese, playSound } from "https://deno.land/x/animalese@1.0.0.0/animalese.js"
+import { animalese, playSound } from "https://deno.land/x/animalese@1.0.1.0/animalese.js"
 
 let pitch = 1 // range from 0 to 2
 let shorten = false
