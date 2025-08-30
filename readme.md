@@ -12,6 +12,6 @@ let pitch = 1 // range from 0 to 2
 let shorten = false
 const base64WavData = animalese("Hello", shorten, pitch).dataURI
 
-// ONLY IN BROWSER
+// this next line only works in the browser (not deno or node js ... yet)
 playSound("Hello World", {pitch: 1}).then(()=>console.log("audio finished"))
 ```
