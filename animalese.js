@@ -142,7 +142,7 @@ import letterLibrary from "./animalese.wav.binaryified.js"
  * Generates an animalese audio representation of the provided script.
  * 
  * @example
- * ts```
+ * ```ts
  *     let pitch = 1 // range from 0 to 2
  *     let shorten = false
  *     const base64WavData = animalese("Hello", shorten, pitch).dataURI
@@ -206,7 +206,7 @@ export function animalese(script, shorten=false, pitch=1) {
  * Browser Only: Plays an animalese audio of provided text.
  * 
  * @example
- * ts```
+ * ```ts
  *     playSound("Hello World", {pitch: 1})
  * ```
  * @param {string} text - The words you want the character to say.
