@@ -3,7 +3,7 @@
 Ever wanted to generate the talking sound from animal crossing? Well [this guy](https://github.com/Acedio/animalese.js/) solved that in 2014.
 <br>Try it out online [here](http://acedio.github.io/animalese.js/)!
 
-This library just makes his code work with modern javascript tooling (ES imports). Try it in your browser console with `const { animalese, playSound } = await import("https://esm.sh/gh/jeff-hykin/animalese@1.0.1.0/animalese.js")`
+This library just makes his code work with modern javascript tooling (ES imports, type hints, etc). Try it in your browser console with `const { animalese, playSound } = await import("https://esm.sh/gh/jeff-hykin/animalese@1.0.1.0/animalese.js")`
  
 ```js
 import { animalese, playSound } from "https://esm.sh/gh/jeff-hykin/animalese@1.0.1.0/animalese.js"
